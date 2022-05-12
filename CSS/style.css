@@ -5,52 +5,7 @@ body,html {
     font-size: calc(14px + (26-14)*((100vw -300px)/ (1600 - 300)));
 }
 
-img{
-    width: 100%;
-}
 
-.bgwht{
-    background-color:var(--white);
-}
-
-.bggry{
-    background-color: #e9e9e9;
-}
-
-.bgWblue{
-    background-color: #74ddda;
-}
-
-.bgblck{
-    background-color: black;    
-}
-
-
-.cblck{
-    color: var(--black);
-}
-.w-100{
-    width: 100%;    
-}
-
-.w-80{
-    width: 80%;
-}
-
-.w-90{
-    width: 90%;    
-}
-.w-50 {
-    width: 50%;    
-}
-
-.m0a{
-    margin: 0 auto;
-}
-
-.ps-fix {
-    position: fixed;
-}
 /*______________________nav__________________________________*/
 
 .navbody {
@@ -241,6 +196,7 @@ img{
     font-weight: 600;
 }
 
+
 .prod-title {
     font-size: 0.7rem;    
 }
@@ -272,4 +228,178 @@ img{
     left: 0;
     right: 0;
     bottom: -0.5rem;
+}
+
+/*_____________SYSTEM___________________*/
+#SYSTEM {
+    background-color: var(--white);
+    padding-top: 5rem;
+}
+
+.systembg{
+    background-image: url(../img/pattern25-400x251.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 6rem;
+}
+
+.img-rsz {
+    width: 40%;
+}
+
+.p-box2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 118, 118);
+    width: 2rem;
+    height: 0.3rem;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.BTN2 {
+    padding: 0.7rem 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 500;  
+    letter-spacing: 0.1rem;  
+}
+
+
+
+/*________________WORKSHOPS________________*/
+
+#WORKSHOPS {
+    padding-top: 5rem;
+    background-color: var(--white);
+}
+
+.wh3 {
+    margin-bottom: 0!important;
+}
+
+.prod-title2 {
+    font-size: 0.4rem;    
+}
+
+
+/*____________________MENTOR_____________________________*/
+
+#MENTOR {
+    background-color: var(--white);
+    padding-top: 5rem;
+}
+
+.mentorimg {
+    width: 60%;
+}
+
+/*___________________KIND_______________________________*/
+
+#KIND {
+    /* padding-top: 5rem; */
+    background-color: #e9e9e9;
+    overflow: hidden;
+}
+
+.wglowbg {
+    top: -2rem;
+    left: 0;
+}
+
+.kindtitlebox::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #ff5746;
+    width: 1.5rem;
+    height: 0.6rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kind-p {
+    font-size: 0.8rem;
+}
+
+
+/*_________________FOOTER____________________________*/
+
+#FOOTER {
+    margin-top: 5rem;
+    background-color: var(--white);
+    /* overflow: hidden; */
+}
+.flowbg {
+    top: -9.8rem;
+    left:0;
+    z-index: 2;
+}
+
+.flowbg svg {
+    width: 100%;
+}
+/*_________________SETUP______________________________*/
+
+img{
+    width: 100%;
+}
+
+.bgwht{
+    background-color:var(--white);
+}
+
+.bggry{
+    background-color: #e9e9e9;
+}
+
+.bgWblue{
+    background-color: #74ddda;
+}
+
+.bgblck{
+    background-color: black;    
+}
+
+
+.cblck{
+    color: var(--black);
+}
+.cwht {
+    color: var(--white);
+}
+.w-100{
+    width: 100%;    
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-90{
+    width: 90%;    
+}
+.w-60 {
+    width: 60%;
+}
+.w-50 {
+    width: 50%;    
+}
+
+.m0a{
+    margin: 0 auto;
+}
+
+.ps-fix {
+    position: fixed;
+}
+
+.fs-1rem {
+    font-size: 1rem;
 }
