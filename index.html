@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/burgerCSS.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <aside></aside>
+    <nav>
+        <div class="navbody w-100 bgwht pt-3 pb-3 ps-fix">
+            <div class="row w-90 m0a">
+                <div class="navbox d-flex justify-content-between position-relative w-100">
+                    <div class="navburger ">         
+                        <input type="checkbox" id="hamburger"/>
+                        <label class="menuicon" for="hamburger">
+                            <span id="spancolor" class="bgblck"></span>
+                        </label>
+
+                    </div>
+                    <div class="navlogo">
+                        <img src="./img/Ka_black.svg" alt="">
+                    </div>
+                    <div class="navcart">
+                        <a href="#" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M15,4V14H1V4H15m1-1H0V15H16Z" fill="#0f1010"></path><path d="M4.5,5.5V4A3.5,3.5,0,0,1,8,.5H8A3.5,3.5,0,0,1,11.5,4V5.5" fill="none" stroke="#0f1010" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path></svg>
+                            (0)
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper bgblck w-100 ">
+        <section class="slogan w-90 m0a d-flex justify-content-center">
+            <p>
+                course has been updated ✨ 
+            </p>
+            <a href="#">Discovered Now</a>
+        </section>
+        <section id="BANNER">
+            <div class="" >
+                <a href="#">
+                    <div class="bannerbg"></div>
+                </a>
+            </div>
+            <div class=" position-relative">
+                <div class="flowbottom position-absolute">
+                </div>
+            </div>
+        </section>
+        <section id="WORDS" class="bgwht w-100">
+            <h3 class="w-90 m0a h3 wordtop position-relative pur-line">
+                Karalyte inspires and empowers through design and creativity. We provide tools, frameworks, and systems to communicate, collaborate, and create in new ways.
+            </h3>
+        </section>
+
+        <section id="INTROSELF" >
+            <div class="intro-pic position-relative"></div>
+            <div class="intro-content ml-3">
+                <h3 class="h3 w-90 text-left  mb-5 ">
+                    I’m Egle Karalyte, a brand strategist and creator of this platform. Together with my team, I’ve been helping top brands and creators on almost every continent to elevate their brand to its next level.
+                </h3>
+                <p class="about-p mb-5">
+                    Have a look around – you’ll find the tools, frameworks, and systems to create a winning brand ✨. 
+                </p>
+                <button class="blackBTN">
+                    Let's meet
+                </button>
+            </div>
+        </section>
+
+        <section id="COCOMPANY">
+                <p class="text-center mb-5" style="font-size:0.8rem; letter-spacing: 0.1rem;">company that trust us</p>
+            <ul class="d-flex companyUL flex-wrap w-90 m0a">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="TOOLS">
+            <div class="toolsbox">
+                <h3 class="h3 w-100 m0a ">Tools</h3>
+                <p class="about-p text-center mt-3">
+                    Our tools give you strategies, structures, and a gamified approach to brand experience design.
+                </p>
+            </div>
+            <div class="toolsproduct mt-5 w-100 whtbg">
+                <ul class="productUL mb-5">
+                    
+                </ul>
+                <div class="d-flex justify-content-center">
+                    <button class="blackBTN m0a" > Shop all tools</button>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+
+
+    <script>
+        const productUL = document.querySelector(".productUL");
+
+        let pushinbox ='';
+
+        for (let i =0 ; i < 6 ; i++){
+            pushinbox += `<li class="bggry w-100 mb-4 ">
+                            <div class=" w-80 m0a">
+                            <div class="p-box position-relative">
+                                <p class="prod-title pt-3 ">PRINT & DIGITAL</p>
+                            </div>
+                            <div class="d-flex mb-3 pt-3">
+                                <h3 class="h3 w-50 text-left">Inspiration Cards</h3>
+                                <span class="w-50 arrow-rsz d-flex justify-content-end align-center pr-5">
+                                    <img src="./img/arrow-black.svg" alt="">
+                                </span>
+                            </div>
+                            <p class="prod-content">
+                                Gamify your workshops, facilitate smooth design conversations, explore visual trends, and add more play to your work! This collection includes 3 sets of inspiration cards:
+                            </p>
+                            <ul class="prod-li w-90 m0a mb-3">
+                                <li>Style Cards Vol.1</li>
+                                <li>Style Cards Vol.2</li>
+                                <li>Word Cards</li>
+                            </ul>
+                            <p class="prod-price">$120.00</p>
+                            <button class="blackBTN mb-4">learn more</button>
+                            <div class="product-img m0a pb-3 ">
+                                <img src="/img/Group-6583-436x372.png" alt="">
+                            </div>
+                            </div>
+                    </li>`;
+        }
+        productUL.innerHTML = pushinbox;
+    </script>
+</body>
+</html>

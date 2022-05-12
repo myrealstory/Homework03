@@ -1,0 +1,275 @@
+body,html {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+    font-size: calc(14px + (26-14)*((100vw -300px)/ (1600 - 300)));
+}
+
+img{
+    width: 100%;
+}
+
+.bgwht{
+    background-color:var(--white);
+}
+
+.bggry{
+    background-color: #e9e9e9;
+}
+
+.bgWblue{
+    background-color: #74ddda;
+}
+
+.bgblck{
+    background-color: black;    
+}
+
+
+.cblck{
+    color: var(--black);
+}
+.w-100{
+    width: 100%;    
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-90{
+    width: 90%;    
+}
+.w-50 {
+    width: 50%;    
+}
+
+.m0a{
+    margin: 0 auto;
+}
+
+.ps-fix {
+    position: fixed;
+}
+/*______________________nav__________________________________*/
+
+.navbody {
+        display: none;
+        top: 60px;
+}
+/*______________________slogan_____________________________*/
+
+.wrapper {
+
+}
+
+.slogan p, .slogan a{
+    color: var(--white);
+    font-size: 0.7rem;  
+    padding-top: 1rem;  
+}
+
+.slogan a {
+    text-decoration:underline;
+}
+
+/**__________________BANNER_______________________**/
+.bannerbg {
+    background-image: url(../img/make-it-2x-scaled.jpg);
+    width: 100%;
+    background-size:1000px 600px;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 23rem;
+    background-repeat: no-repeat;
+    background-color: var(--white);
+}
+
+
+.flowbottom {
+    background-image: url(../img/Subtraction-white.svg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:7rem;
+    bottom: 0;
+    left:0;
+    
+}
+
+/*________________________Words______________________________*/
+
+
+.h3{
+    color: var(--black);
+    overflow-wrap: break-word;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.wordtop {
+    padding-top: 3rem;    
+    overflow: hidden;
+}
+
+.pur-line::before{
+    background-image: url(../img/Line-1037.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    top: 0rem;
+    left: 50%;
+    transform: translateX(-5%); 
+}
+
+/*______________________IntroSelf______________________________*/
+
+#INTROSELF {
+    padding-top: 6rem;
+    background-color: var(--white);
+    width: 100%;
+    overflow: hidden;
+}
+
+.intro-pic {
+    background: url(../img/Group-6313-410x372.jpg) center no-repeat;
+    height: 15rem;
+    background-size: auto;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 5rem ;
+}  
+
+.intro-pic::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/about-back.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 6rem;
+    left: 10rem;
+    bottom: 0;
+    right: 0;
+
+}
+
+.about-p {
+    font-size: 1rem;
+    line-height: 40px;    
+}
+
+.blackBTN {
+    padding: 1rem 1.3rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;  
+    letter-spacing: 0.1rem;  
+}
+
+/*____________________________COCOMPANY____________________*/
+
+#COCOMPANY {
+    padding-top: 5rem;
+    background-color: var(--white);    
+}
+
+.companyUL li{
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2rem;
+    padding: 0 2rem; 
+    height: 3rem;
+}
+
+.companyUL :nth-child(1) { 
+    background-image: url(../img/logo_1.svg); 
+}
+
+.companyUL :nth-child(2) {
+    background-image: url(../img/logo_2.svg); 
+}
+
+.companyUL :nth-child(3) {
+    background-image: url(../img/logo_3.svg); 
+}
+
+.companyUL :nth-child(4) {
+    background-image: url(../img/logo_4.svg); 
+}
+
+.companyUL :nth-child(5) {
+    background-image: url(../img/logo_5.svg); 
+}
+
+.companyUL :nth-child(6) {
+    background-image: url(../img/logo_6.svg); 
+}
+
+.companyUL :nth-child(7) {
+    background-image: url(../img/logo_7.svg); 
+}
+
+.companyUL :nth-child(8) {
+    background-image: url(../img/logo_8.svg); 
+}
+
+.companyUL :nth-child(9) {
+    background-image: url(../img/logo_9.svg); 
+}
+
+.companyUL :nth-child(10) {
+    background-image: url(../img/logo_0.svg); 
+}
+
+/*_____________TOOLS_____________________________*/
+
+#TOOLS {
+    background-color: var(--white);
+    padding-top: 5rem;
+}
+
+.toolsbox h3{
+    font-weight: 600;
+}
+
+.prod-title {
+    font-size: 0.7rem;    
+}
+
+.arrow-rsz img{
+    width: 20%;    
+}
+
+.prod-content {
+    line-height: 2rem;    
+}
+
+.prod-li li {
+    list-style-type: disc;
+}
+
+.prod-price {
+    font-size: 1.5rem;
+    font-style: italic;    
+}
+
+.p-box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: yellow;
+    width: 2rem;
+    height: 0.3rem;
+    left: 0;
+    right: 0;
+    bottom: -0.5rem;
+}
