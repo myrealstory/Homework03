@@ -3,14 +3,46 @@ body,html {
     width: 100%;
     height: auto;
     font-size: calc(14px + (26-14)*((100vw -300px)/ (1600 - 300)));
+    overflow-x: hidden;
 }
 
 
 /*______________________nav__________________________________*/
 
 .navbody {
-        display: none;
         top: 60px;
+        /* background-color: var(--white); */
+        z-index: 3;
+        padding: 1rem 0;
+}
+
+.disappear {
+    opacity: 0;
+    animation-delay: 0.5s;
+    transition: 1s;
+
+}
+.appear {
+    opacity: 1;
+    animation-delay: 0.5s;
+    transition: 1s;
+    /* background-color: var(--white); */
+}
+.movetop {
+    transform: translateY(-3rem);
+}
+.movedown {
+    transform: translateY(0);
+}
+
+@media screen and (min-width:768px){
+     .navbody{
+        /* display: none; */
+        padding: 0.5rem !important;
+    } 
+    .movetop {
+        transform: translateY(-1.2rem);
+    }
 }
 /*______________________slogan_____________________________*/
 
@@ -27,7 +59,28 @@ body,html {
 .slogan a {
     text-decoration:underline;
 }
-
+@media screen and (min-width:768px){
+    .slogan p, .slogan a{
+        font-size: 0.3rem;  
+        padding-top: 0.3rem;
+        margin-bottom: 0.3rem !important;
+    }
+    .navcart {
+        font-size: 0.3rem;
+    }
+    .navbtn {
+         font-size: 0.3rem;
+     }
+    .navbtn a {
+         color: var(--black);
+         margin-right: 0.3rem;
+     }
+    .navlogo {
+        left: 50%;
+        transform: translateX(-50%);
+     }
+ 
+}
 /**__________________BANNER_______________________**/
 .bannerbg {
     background-image: url(../img/make-it-2x-scaled.jpg);
@@ -50,6 +103,13 @@ body,html {
     bottom: 0;
     left:0;
     
+}
+@media screen and (min-width:768px){
+    .bannerbg {
+        background-size: 100vw ;
+        background-position: top center;
+        background-attachment: local;
+    }
 }
 
 /*________________________Words______________________________*/
@@ -80,14 +140,28 @@ body,html {
     left: 50%;
     transform: translateX(-5%); 
 }
-
-/*______________________IntroSelf______________________________*/
+@media screen and (min-width:768px){
+    .h3{
+    font-size: 0.7rem;
+    width: 30%;
+    line-height: 0.9rem;
+  }
+  .wordtop {
+      padding-top:1rem ;
+  }
+  .pur-line::before{
+      left: 50%;
+      transform: translateX(-0.5%);
+  }
+}
+/*_____________________IntroSelf______________________________*/
 
 #INTROSELF {
     padding-top: 6rem;
     background-color: var(--white);
     width: 100%;
     overflow: hidden;
+    max-width: 100%;
 }
 
 .intro-pic {
@@ -130,11 +204,56 @@ body,html {
     letter-spacing: 0.1rem;  
 }
 
+@media screen and (min-width:768px){
+    .intro-pic {
+        background-image: url(../img/Group-6313.jpg);
+        width: 50vw;
+        background-position: right top;
+        margin: 0 auto;
+    }
+    .intro-pic::before {
+        background-size: contain;
+        background-position: center;
+        top: -7rem;
+        left: 26rem;
+    }
+    .intro-content{
+        width: 50vw;
+        padding-left: 2rem;
+    }
+    .introbox {
+        display: flex;
+        justify-content: center;
+    }
+    .h3-1{
+        padding-top: 1rem;
+        font-size: 0.5rem!important;
+        width: 50%!important;
+        line-height:0.7rem ;
+        margin-bottom: 1rem!important;
+    }
+    .about-p {
+        font-size: 0.3rem;
+        font-weight: 100;
+        width: 50%;
+        line-height: 0.4rem;
+        margin-bottom: .5rem!important;
+    }
+    .blackBTN {
+        font-size: 0.3rem;
+        padding: 0.3rem 0.4rem;
+        letter-spacing: 0rem;  
+}
 /*____________________________COCOMPANY____________________*/
 
 #COCOMPANY {
     padding-top: 5rem;
     background-color: var(--white);    
+}
+
+.cocompany-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
 }
 
 .companyUL li{
@@ -184,6 +303,19 @@ body,html {
 .companyUL :nth-child(10) {
     background-image: url(../img/logo_0.svg); 
 }
+@media screen and (min-width:768px){
+    .cocompany-title {
+        font-size: 0.1rem;
+    }
+    .companyUL li{
+        margin: 1rem;
+        padding: 0 2rem; 
+        height: 1rem;
+    }
+    .companyUL {
+        justify-content: center;
+    }
+}
 
 /*_____________TOOLS_____________________________*/
 
@@ -229,6 +361,61 @@ body,html {
     right: 0;
     bottom: -0.5rem;
 }
+@media screen and (min-width:768px){
+    .toolsbox p {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 0.4rem;
+        line-height: 0.6rem;
+    }
+    .xl-rsz {
+        width: 40%!important;
+        margin: 0.4rem!important;
+    }
+    .productUL {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .prod-title {
+        font-size: 0.2rem;  
+        display: flex;
+        align-items: center;  
+    }
+    .xl-proh3 {
+        padding-top: 0.5rem;
+        width: 42%!important;
+    }
+    .xl-title {
+        margin-bottom: 0.5rem!important;
+    }
+    .p-box::after {
+        width: 1rem;
+        height: 0.1rem;
+        bottom: -0.2rem;
+    }
+    .arrow-rsz img{
+        width: 15%;    
+    }
+    .arrow-rsz {
+        justify-content: start!important;
+    }
+    .prod-content {
+        font-size: 0.4rem;
+        line-height: 0.8rem;
+    }
+    .prod-li{
+        font-size: 0.4rem;
+    }
+    .prod-price {
+        font-size: 0.5rem;
+    }
+    .product-img {
+        width: 70%;
+    }
+    .xl-btn-mb
+}
+
 
 /*_____________SYSTEM___________________*/
 #SYSTEM {
@@ -270,7 +457,32 @@ body,html {
     letter-spacing: 0.1rem;  
 }
 
+@media screen and (min-width:768px){
+    #SYSTEM {
+        padding-top: 3rem;
+    }
+    .xl-sys-rsz {
+        width: 30%!important;
+        margin: 0 0.3rem!important;
+    }
+    .sys-f-UL {
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap ;
+    }
+    .p-box2::after {
+        width: 0.8rem;
+        height: 0.1rem;
+        top: 2.1rem;
+    }
+    .w-md-45 {
+        width: 45% !important;
+    }
 
+    .fs-md {
+        
+    }
+}
 
 /*________________WORKSHOPS________________*/
 
@@ -287,7 +499,9 @@ body,html {
     font-size: 0.4rem;    
 }
 
-
+@media screen and (min-width:768px){
+    
+}
 /*____________________MENTOR_____________________________*/
 
 #MENTOR {
@@ -299,6 +513,9 @@ body,html {
     width: 60%;
 }
 
+@media screen and (min-width:768px){
+    
+}
 /*___________________KIND_______________________________*/
 
 #KIND {
@@ -345,6 +562,39 @@ body,html {
 .flowbg svg {
     width: 100%;
 }
+
+/**_______________________________footButton_________*/
+.li-logo{
+    width: 10%;
+}
+.button-title{
+    text-transform: uppercase;
+    color: rgb(82, 82, 82);
+    font-size: .6rem;
+    padding: 1rem 0 0.3rem 0;
+}
+.button-size {
+    font-size: .5rem;
+    margin: 0.7rem 0 ;
+}
+.button-size a {
+    color:var(--black)
+}
+.footer-content {
+    font-size: 0.7rem;
+}
+.icon-size {
+    background-size: auto;
+    background-position: top center;
+    width: 1rem;
+    background-repeat: no-repeat;
+}
+.in-icon {
+    background-image: url(../img/social_linkedin.svg);
+}
+.inst-icon {
+    background-image: url(../img/social_instagram.svg);
+}
 /*_________________SETUP______________________________*/
 
 img{
@@ -390,6 +640,10 @@ img{
 }
 .w-50 {
     width: 50%;    
+}
+
+.xl-w30 {
+    width: 30%!important;
 }
 
 .m0a{

@@ -12,25 +12,35 @@
 </head>
 <body>
     <aside></aside>
-    <nav>
-        <div class="navbody w-100 bgwht pt-3 pb-3 ps-fix">
-            <div class="row w-90 m0a">
-                <div class="navbox d-flex justify-content-between position-relative w-100">
+    <nav >
+        <div class="navbody w-100 ps-fix appear" id="NAV">
+            <div class="row w-90 m0a ">
+                <div class="navbox d-flex justify-content-between align-items-center position-relative w-100 ">
                     <div class="navburger ">         
                         <input type="checkbox" id="hamburger"/>
                         <label class="menuicon" for="hamburger">
-                            <span id="spancolor" class="bgblck"></span>
+                        <span id="spancolor" class="bgblck"></span>
                         </label>
 
                     </div>
-                    <div class="navlogo">
-                        <img src="./img/Ka_black.svg" alt="">
-                    </div>
-                    <div class="navcart">
-                        <a href="#" >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M15,4V14H1V4H15m1-1H0V15H16Z" fill="#0f1010"></path><path d="M4.5,5.5V4A3.5,3.5,0,0,1,8,.5H8A3.5,3.5,0,0,1,11.5,4V5.5" fill="none" stroke="#0f1010" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path></svg>
-                            (0)
-                        </a>
+                    
+                  
+                        <div class="navlogo position-absolute ">
+                            <img src="./img/Ka_black.svg" alt="">
+                        </div>
+                   
+                    <div class="d-flex">
+                        <div class="d-flex navbtn mr-1 align-items-center">
+                            <a href="#">shop</a>
+                            <a href="#">blog</a>
+                            <a href="#">sign in</a>
+                        </div>
+                        <div class="navcart">
+                            <a href="#" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M15,4V14H1V4H15m1-1H0V15H16Z" fill="#0f1010"></path><path d="M4.5,5.5V4A3.5,3.5,0,0,1,8,.5H8A3.5,3.5,0,0,1,11.5,4V5.5" fill="none" stroke="#0f1010" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path></svg>
+                                (0)
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -57,29 +67,31 @@
                 </div>
             </div>
         </section>
-        <section id="WORDS" class="bgwht w-100">
-            <h3 class="w-90 m0a h3 wordtop position-relative pur-line">
+        <section id="WORDS" class="bgwht w-100 position-relative">
+            <h3 class="w-90 m0a h3 wordtop  pur-line xl-w30">
                 Karalyte inspires and empowers through design and creativity. We provide tools, frameworks, and systems to communicate, collaborate, and create in new ways.
             </h3>
         </section>
 
         <section id="INTROSELF" >
-            <div class="intro-pic position-relative"></div>
-            <div class="intro-content ml-3">
-                <h3 class="h3 w-90 text-left  mb-5 ">
-                    I’m Egle Karalyte, a brand strategist and creator of this platform. Together with my team, I’ve been helping top brands and creators on almost every continent to elevate their brand to its next level.
-                </h3>
-                <p class="about-p mb-5">
-                    Have a look around – you’ll find the tools, frameworks, and systems to create a winning brand ✨. 
-                </p>
-                <button class="blackBTN">
-                    Let's meet
-                </button>
+            <div class="introbox">
+                <div class="intro-pic position-relative"></div>
+                <div class="intro-content ml-3">
+                    <h3 class="h3 w-90 text-left  mb-5 h3-1">
+                        I’m Egle Karalyte, a brand strategist and creator of this platform. Together with my team, I’ve been helping top brands and creators on almost every continent to elevate their brand to its next level.
+                    </h3>
+                    <p class="about-p mb-5">
+                        Have a look around – you’ll find the tools, frameworks, and systems to create a winning brand ✨.
+                    </p>
+                    <button class="blackBTN">
+                        Let's meet
+                    </button>
+                </div>
             </div>
         </section>
 
         <section id="COCOMPANY">
-                <p class="text-center mb-5" style="font-size:0.8rem; letter-spacing: 0.1rem;">company that trust us</p>
+                <p class="text-center mb-5 cocompany-title">company that trust us</p>
             <ul class="d-flex companyUL flex-wrap w-90 m0a">
                 <li></li>
                 <li></li>
@@ -93,6 +105,7 @@
                 <li></li>
             </ul>
         </section>
+
         <section id="TOOLS">
             <div class="toolsbox w-90 m0a">
                 <h3 class="h3 w-100 m0a ">Tools</h3>
@@ -101,7 +114,7 @@
                 </p>
             </div>
             <div class="toolsproduct mt-5 w-100 whtbg">
-                <ul class="productUL mb-5">
+                <ul class="productUL mb-sm-5 mb-md-3">
                     
                 </ul>
                 <div class="d-flex justify-content-center">
@@ -111,9 +124,9 @@
         </section>
         <section id="SYSTEM" >
             <div class="toolsbox w-90 m0a">
-                <h3 class="h3 w-100 m0a ">Tools</h3>
+                <h3 class="h3 w-100 m0a ">System</h3>
                 <p class="about-p text-center mt-3">
-                    Our tools give you strategies, structures, and a gamified approach to brand experience design.
+                    We provide plug-and-play systems that elevate your brand’s experience driving sales.
                 </p>
             </div>
             <div class="sys-f-product mt-5 w-100 whtbg">
@@ -206,7 +219,92 @@
             </div>
         </section>
     </div>
+    <section id="footbutton">
+        <div class="w-90 m0a">
+            <ul>
+                <li class="li-logo">
+                    <div class=" w-100">
+                        <img src="./img/Ka_black.svg" alt="">
+                    </div>
+                </li>
+                <li class="button-size">
+                    <a href="#">About</a>
+                </li>
+                <li class="button-size">
+                    <a href="#">Success Stories</a>
+                </li>
+                <li class="button-size">
+                    <a href="#">Shop</a>
+                </li>
+                <li class="button-size">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="button-size">
+                    <a href="#">FAQ</a>
+                </li>
+                <li class="button-size">
+                    <a href="#">Shipping & Returns</a>
+                </li>
+                <li class="button-size">
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <li class="button-size">
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li class="button-size">
+                    <a href="#">Get in Touch</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="button-title">workshopss</li>
+                <li class="button-size"><a href="#">Bloomerang</a></li>
+                <li class="button-size"><a href="#">Next-Generation Brand, who are you?</a></li>
+                <li class="button-size"><a href="#">Brand Experience Degisn Workshop</a></li>
+                <li class="button-size"><a href="#">UX Fundamentals</a></li>
+                <li class="button-size"><a href="#">Mentorship Program</a></li>
+            </ul>
+            <ul>
+                <li class="button-title">brand strategy tools</li>
+                <li class="button-size"><a href="#">Brand Experience Design Framework</a></li>
+                <li class="button-size"><a href="#">Brand Strategy Framework</a></li>
+                <li class="button-size"><a href="#">Brand Strategy Toolkit</a></li>
+                <li class="button-size"><a href="#">Brand Strategy Kit</a></li>
+                <li class="button-size"><a href="#">Brand Cards</a></li>
+                <li class="button-size"><a href="#">Word Cards</a></li>
+                <li class="button-size"><a href="#">Brand Canvas</a></li>
+            </ul>
+            <ul>
+                <li class="button-title">systems</li>
+                <li class="button-size"><a href="#">Brand system</a></li>
+                <li class="button-size"><a href="#">Content system</a></li>
+                <li class="button-size"><a href="#">Digital system</a></li>
+            </ul>
+            <ul>
+                <li class="button-title">inspiration tools</li>
+                <li class="button-size"><a href="#">Style Cards Vol. 1</a></li>
+                <li class="button-size"><a href="#">Style Cards Vol. 2</a></li>
+                <li class="button-size"><a href="#">Inspiration Cards</a></li>
+            </ul>
+            <ul>
+                <li class="button-title">content strategy tools</li>
+                <li class="button-size"><a href="#">Content Strategy Framework</a></li>
+                <li class="button-size"><a href="#">Content Strategy Kit</a></li>
+                <li class="button-size"><a href="#">Content Cards</a></li>
+                <li class="button-size"><a href="#">Content Canvas</a></li>
+            </ul>
+            <div class="d-flex pt-3">
+                <div class="icon-size in-icon mr-2 "></div>
+                <div class="icon-size inst-icon mr-2 "></div>
+                <div class="footer-content">© 2004-2022 Karalyte Ltd. All Rights Reserved.</div>
+            </div>
+        </div>
+    </section>
 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
 
 
     <script>
@@ -215,14 +313,53 @@
         const workUL = document.querySelector(".workProdUL");
         let pushinbox ='';
         let systFpush ='';
+
+        $(window).scroll(function(e){
+            var scroll = $(window).scrollTop();
+            var wx = $(window).width();
+            console.log(scroll);
+            // console.log();
+            if(wx <= 768 ){
+                if(scroll >=0 && scroll <= 100){
+            //    $("#NAV").removeClass("appear");
+               $("#NAV").removeClass("movetop");
+               $("#NAV").removeClass("bgwht");
+               $("#NAV").addClass("disappear");
+               $("#NAV").addClass("movedown");
+
+            }else if (scroll >= 101 ){
+                $("#NAV").removeClass("disappear");
+                $("#NAV").removeClass("movedown");
+                $("#NAV").addClass("appear");
+                $("#NAV").addClass("movetop");
+                $("#NAV").addClass("bgwht");
+            }
+            }else {
+                if(scroll >= 0 && scroll <=900){
+                    $("#NAV").removeClass("movetop");
+                    $("#NAV").removeClass("bgwht");
+                    $("#NAV").addClass("disappear");
+                    $("#NAV").addClass("movedown");
+
+                }else if(scroll >901){
+                    $("#NAV").removeClass("disappear");
+                    $("#NAV").removeClass("movedown");
+                    $("#NAV").addClass("appear");
+                    $("#NAV").addClass("movetop");
+                    $("#NAV").addClass("bgwht");
+                }
+            }
+           
+        });
+
         for (let i =0 ; i < 6 ; i++){
-            pushinbox += `<li class="bggry w-90 mb-4 m0a ">
+            pushinbox += `<li class="bggry w-90 mb-4 m0a xl-rsz">
                             <div class=" w-90 m0a">
                             <div class="p-box position-relative">
                                 <p class="prod-title pt-3 ">PRINT & DIGITAL</p>
                             </div>
-                            <div class="d-flex mb-3 pt-3">
-                                <h3 class="h3 w-50 text-left">Inspiration Cards</h3>
+                            <div class="d-flex mb-sm-3 mb-md-1 pt-sm-3 pt-md-1 xl-title">
+                                <h3 class="h3 w-50 text-left xl-proh3">Inspiration Cards</h3>
                                 <span class="w-50 arrow-rsz d-flex justify-content-end align-center pr-5">
                                     <img src="./img/arrow-black.svg" alt="">
                                 </span>
@@ -230,13 +367,13 @@
                             <p class="prod-content">
                                 Gamify your workshops, facilitate smooth design conversations, explore visual trends, and add more play to your work! This collection includes 3 sets of inspiration cards:
                             </p>
-                            <ul class="prod-li w-90 m0a mb-3">
+                            <ul class="prod-li w-90 m0a mb-sm-3 mb-md-2">
                                 <li>Style Cards Vol.1</li>
                                 <li>Style Cards Vol.2</li>
                                 <li>Word Cards</li>
                             </ul>
                             <p class="prod-price">$120.00</p>
-                            <button class="blackBTN mb-4">learn more</button>
+                            <button class="blackBTN mb-sm-4 mb-md-2">learn more</button>
                             <div class="product-img m0a pb-3 ">
                                 <img src="/img/Group-6583-436x372.png" alt="">
                             </div>
@@ -246,19 +383,19 @@
             
         }
         for(let k =0 ; k < 3 ; k++) {
-            systFpush += ` <li class="w-90 m0a bggry mb-3">
+            systFpush += ` <li class="w-90 m0a bggry mb-sm-3 mb-md-1 xl-sys-rsz">
                         <div class="w-90 m0a">
                             <div class="d-flex justify-content-between">
                                     <p class=" p-box2 prod-title pt-3 position-relative">SYSTEM</p>
                                 <img src="./img/Brand_Strategy_Intensive_object-220x220.png"  class ="img-rsz" alt="">
                             </div>
                             <div class="d-flex">
-                                <h3 class="h3 w-60 text-left text-nowrap">Brand System</h3>
-                                <span class=" d-flex align-center pl-3 arrow-sz">
+                                <h3 class="h3 w-60 text-left text-nowrap w-md-45 ">Brand System</h3>
+                                <span class=" d-flex align-items-sm-center align-items-md-start pl-sm-3 pl-md-1 pt-md-1 arrow-sz">
                                     <img src="./img/arrow-black.svg" alt="">
                                 </span>
                             </div>
-                            <p class="mb-5">
+                            <p class="mb-sm-5 fs-md">
                                 Narrow in on your vision, crystallize your offering, brand’s positioning, messaging, personality, and design direction. Gain clarity and focus for your next move.
                             </p>
                             <button class="bgblck cwht BTN2 mb-5">
@@ -271,6 +408,8 @@
         productUL.innerHTML = pushinbox;
         sysfirstul.innerHTML = systFpush;
         workUL.innerHTML = systFpush;
+
+
     </script>
 </body>
 </html>
