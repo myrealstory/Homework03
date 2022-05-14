@@ -462,7 +462,7 @@ body,html {
         padding-top: 3rem;
     }
     .xl-sys-rsz {
-        width: 30%!important;
+        width: 25%!important;
         margin: 0 0.3rem!important;
     }
     .sys-f-UL {
@@ -476,11 +476,20 @@ body,html {
         top: 2.1rem;
     }
     .w-md-45 {
-        width: 45% !important;
+        width: 55% !important;
     }
 
     .fs-md {
-        
+        font-size: 0.3rem;
+        width: 70%;
+    }
+
+    .BTN2 {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.3rem;
+        text-align: center;
+        font-weight: 500;  
+        letter-spacing: 0rem; 
     }
 }
 
@@ -500,7 +509,39 @@ body,html {
 }
 
 @media screen and (min-width:768px){
-    
+    #WORKSHOPS {
+        padding-top: 3rem;
+    }
+    .work-commrl {
+        width: 78% !important;
+    }
+    .prod-title2 {
+        font-size: 0.2rem;    
+    }
+    .wh3 {
+        font-size: 1.2rem;
+    }
+    .sub-title {
+        font-size: 0.4rem;
+    }
+    .fs-md-price {
+        font-size: 0.4rem !important;  
+        margin-bottom: 0.5rem !important;     
+    }
+    .bye {
+        display: none;
+    }
+    .work-commrl {
+        background-image: url(../img/bloom.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center right;
+    }
+    .workProdUL {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 /*____________________MENTOR_____________________________*/
 
@@ -514,7 +555,23 @@ body,html {
 }
 
 @media screen and (min-width:768px){
-    
+    #MENTOR {
+        padding-top: 3rem;
+    }
+    .mentorbox {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .mentortitle {
+        font-size: 1.2rem;
+    }
+    .mnt-cmmrl {
+        width: 78% !important;
+        background-image: url(../img/Mentorship_program_mockup_LIGHT_new2_withaccent.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: auto;
+    }
 }
 /*___________________KIND_______________________________*/
 
@@ -545,7 +602,9 @@ body,html {
     font-size: 0.8rem;
 }
 
-
+@media screen and (min-width: 768px) {
+    
+}
 /*_________________FOOTER____________________________*/
 
 #FOOTER {
