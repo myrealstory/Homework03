@@ -557,6 +557,7 @@ body,html {
 @media screen and (min-width:768px){
     #MENTOR {
         padding-top: 3rem;
+        padding-bottom: 2rem;
     }
     .mentorbox {
         width: 90%;
@@ -603,7 +604,23 @@ body,html {
 }
 
 @media screen and (min-width: 768px) {
-    
+    .wglowbg svg{
+       transform: scaleX(2);
+    }
+    .kindtitlebox h3{
+        width: 100%;
+    }
+    .kindtitlebox::before {
+        width: 0.5rem;
+        height: 0.1rem;
+        top: 1rem;
+    }
+    .kind-space {
+        width: 30%;
+    }
+    .kind-p {
+        font-size: 0.5rem;
+    }
 }
 /*_________________FOOTER____________________________*/
 
@@ -621,7 +638,14 @@ body,html {
 .flowbg svg {
     width: 100%;
 }
-
+@media screen and (min-width:768px) {
+    .flowbg svg {
+        transform: scaleX(2);
+    }
+    .flowbg {
+        top: -8.8rem;
+    }
+}
 /**_______________________________footButton_________*/
 .li-logo{
     width: 10%;
@@ -653,6 +677,31 @@ body,html {
 }
 .inst-icon {
     background-image: url(../img/social_instagram.svg);
+}
+@media screen and (min-width:768px) {
+    .button-size {
+        font-size: 0.2rem;
+        margin: 0.3rem 1rem ;
+    }
+    .footer-content {
+        font-size: 0.3rem;
+    }
+    .button-title{
+        font-size: .2rem;
+        padding: 1rem 0 0.3rem 0.7rem;
+        margin: 0 0.3rem;
+    }
+    .li-logo{
+        width: 10%;
+        margin-left: 1rem;
+    }
+    .endfoot {
+        margin: 0 auto;
+        width: 65% !important;
+    }
+    .icon-size {
+        height: 1rem;
+    }
 }
 /*_________________SETUP______________________________*/
 
